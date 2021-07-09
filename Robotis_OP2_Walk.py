@@ -110,33 +110,33 @@ class Walk():
             elif key == 315: # 
                 self.mGaitManager.setXAmplitude(1.0)
                 print("GPS:",self.gps.getValues())
-                print("Total Distance traveled in Terms of X Coordinate:",abs(self.gps.getValues()[0]-initialgps[0]))
+                print("Total Distance traveled in Terms of X Coordinate in metres:",abs(self.gps.getValues()[0]-initialgps[0]))
                 #print("GPS Y:",self.gps.getValues()[1]-initialgps[1])
-                print("Total Distance traveled in Terms of Z Coordinate::",abs(self.gps.getValues()[2]-initialgps[2]))
+                print("Total Distance traveled in Terms of Z Coordinate in metres:",abs(self.gps.getValues()[2]-initialgps[2]))
                 print("Speed:",self.gps.getSpeed())
                
             elif key == 317:  
                 self.mGaitManager.setXAmplitude(-1.0)
                 print("GPS:",self.gps.getValues())
-                print("Total Distance traveled in Terms of X Coordinate:",abs(self.gps.getValues()[0]-initialgps[0]))
+                print("Total Distance traveled in Terms of X Coordinate in metres :",abs(self.gps.getValues()[0]-initialgps[0]))
                 #print("GPS Y:",self.gps.getValues()[1]-initialgps[1])
-                print("Total Distance traveled in Terms of Z Coordinate::",abs(self.gps.getValues()[2]-initialgps[2]))
+                print("Total Distance traveled in Terms of Z Coordinate in metres :",abs(self.gps.getValues()[2]-initialgps[2]))
                 print("Speed:",self.gps.getSpeed())
                 
             elif key == 316: 
                 self.mGaitManager.setAAmplitude(-0.5)
                 print("GPS:",self.gps.getValues())
-                print("Total Distance traveled in Terms of X Coordinate:",abs(self.gps.getValues()[0]-initialgps[0]))
+                print("Total Distance traveled in Terms of X Coordinate in metres:",abs(self.gps.getValues()[0]-initialgps[0]))
                 #print("GPS Y:",self.gps.getValues()[1]-initialgps[1])
-                print("Total Distance traveled in Terms of Z Coordinate::",abs(self.gps.getValues()[2]-initialgps[2]))
+                print("Total Distance traveled in Terms of Z Coordinate in metres:",abs(self.gps.getValues()[2]-initialgps[2]))
                 print("Speed:",self.gps.getSpeed())
                 
             elif key == 314: 
                 self.mGaitManager.setAAmplitude(0.5)
                 print("GPS:",self.gps.getValues())
-                print("Total Distance traveled in Terms of X Coordinate:",abs(self.gps.getValues()[0]-initialgps[0]))
+                print("Total Distance traveled in Terms of X Coordinatei n metres:",abs(self.gps.getValues()[0]-initialgps[0]))
                 #print("GPS Y:",self.gps.getValues()[1]-initialgps[1])
-                print("Total Distance traveled in Terms of Z Coordinate::",abs(self.gps.getValues()[2]-initialgps[2]))
+                print("Total Distance traveled in Terms of Z Coordinate in metres:",abs(self.gps.getValues()[2]-initialgps[2]))
                 print("Speed:",self.gps.getSpeed())
                 
             self.mGaitManager.step(self.mTimeStep)  # The gait generator generates a step-length movement
